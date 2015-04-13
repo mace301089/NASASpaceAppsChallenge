@@ -1,6 +1,12 @@
-![Junk Busters Logo](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Logo/JunkBusters-Logo%20small.jpg)
+Welcome,  
+we are  
+[ ![Junk Busters Logo](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Logo/JunkBusters-Logo%20small.jpg) ](https://2015.spaceappschallenge.org/project/junk-busters/)
+
 #Space Junk
 The increasing amount of space junk is a human made problem. We came up with the idea to use the [NASA SPHERES](http://www.nasa.gov/spheres/satellites.html) platform for developing autonomous satellites with stereo vision cameras to actively remove space junk. Our vision consists of two or more paired spheres: An observatory unit and one ore more operational units. 
+
+[ ![SPHERES with VERTIGO extension for stereo vision](http://ssl.mit.edu/spheres/images/vertigo/vertigo-only-lores.jpg) ](http://ssl.mit.edu/spheres/projects/vertigo.html)  
+SPHERES with VERTIGO extension for stereo vision
 
 #Utilizing Stereo Vision
 Having our idea in mind we used a real stereo camera setup ([IDS uEye](https://de.ids-imaging.com/store/ui-3220cp.html)), our laptop webcams and virtual demos to develop our implementation.
@@ -39,6 +45,12 @@ Dashboard with Annotations
 
 ##MatLab Trials
 Our initial goal was to solve the project using MatLab. Since we ran into trouble we soon started to change the setup. We started using the [Computer Vision System Toolbox](http://de.mathworks.com/products/computer-vision/) and worked on an initial user interface. All the space trajectory processing was developed in MatLab and afterwards ported to C and Java (Processing).
+
+#Presentation Material
+
+[ Here you can see our slides:  
+ ![Junk Busters Slides](http://0701.static.prezi.com/preview/hr4w4evjveobqvcuy6qbrnvvpaadw6rhlm5vs2oll757hbaoaxlq_0_0.png)  
+](http://prezi.com/fyv5emc8qm2u/)
 
 #Acknowledgements
 Thanks to the members of staff at [Lab75](https://lab75.jp/), our host at Space Apps Challenge 2015 at Frankfurt. We also thank [Prof. Dr. Stephan Neser](http://www.fbmn.h-da.de/~neser/) for supporting us with the stereo camera equipment and MatLab advice.
