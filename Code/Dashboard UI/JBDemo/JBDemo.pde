@@ -117,6 +117,7 @@ void drawElement(String label, PImage objImg, float[] pos, float[] screenPos,
   screenPos = new float[] {0,0}; // see translation before
   
   offscreen.stroke(255);
+  offscreen.strokeWeight(2);
   final float dNConversion = 2;
   float dX = velo[0] / dNConversion;
   float dY = -1*velo[1] / dNConversion;
@@ -124,6 +125,7 @@ void drawElement(String label, PImage objImg, float[] pos, float[] screenPos,
   offscreen.line(screenPos[0], screenPos[1], screenPos[0]+dX, screenPos[1]);
   offscreen.line(screenPos[0], screenPos[1], screenPos[0], screenPos[1]+dY);
   offscreen.line(screenPos[0], screenPos[1], screenPos[0]+dZ, screenPos[1]+dZ);
+  offscreen.strokeWeight(1);
   
   offscreen.fill(255);
   offscreen.text(label, screenPos[0]+20, screenPos[1]+20);
