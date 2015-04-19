@@ -4,7 +4,7 @@ we are
 
 #Abstract
 ***
-Space junk has become a major threat for future space exploration. Predictions indicate that we actively have to remove space junk to not to litter the earths orbit completely. In order to reduce the amount of junk in space we are using 3D stereo data to locate, track and navigate space debris which is then actively removed. We use a hardware stereo sensor consisting of two industrial cameras in order to gather 3D depth data. In addition we visualize the relative movement of objects in space. 
+Space junk has become a major threat for future space exploration. Predictions indicate that we actively have to remove space junk to not to litter the earths orbit completely. In order to reduce the amount of junk in space we are using 3D stereo data to locate, track and navigate space debris which is then actively removed. We use a hardware stereo sensor consisting of two industrial cameras in order to gather 3D depth data. In addition we visualize the relative movement of objects in space.
 
 #The Problem: Space Junk
 ***
@@ -16,14 +16,14 @@ The increasing amount of space junk [1] is a human made problem. We came up with
 #Our Solution: Paired SPHERES
 ***
 
-Our vision consists of two or more paired SPHERES: An observatory unit and one or more operational units. They can detect small particles and remove them in a safely manner, for example using a ion source.
+Our vision consists of two or more paired SPHERES: An observatory unit and one or more operational units. They can detect space debris and remove it in a safely manner, for example by using an ion thruster or by attaching a chemical thruster to old satellites.
 
 [ ![SPHERES with VERTIGO extension for stereo vision](http://ssl.mit.edu/spheres/images/vertigo/vertigo-only-lores.jpg) ](http://ssl.mit.edu/spheres/projects/vertigo.html)  
 **Figure 2** *SPHERES with VERTIGO extension for stereo vision [3]*
 
 ##Utilizing Stereo Vision
 ***
-Having our idea in mind we used a real stereo camera setup ([IDS uEye](https://de.ids-imaging.com/store/ui-3220cp.html), see Figure 1), our laptop web-cams and virtual demos to develop our implementation.
+Having our idea in mind we used a real stereo camera setup ([IDS uEye](https://de.ids-imaging.com/store/ui-3220cp.html), see Figure 4), our laptop web-cams and virtual demos to develop our implementation.
 
 ![Front view of our stereo sensor](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Video%20Processing/stereoSensorInside.jpg)
 **Figure 4** *Front view of our stereo sensor*
@@ -41,10 +41,10 @@ We created a set of software to demonstrate our vision and concept. There are tw
 ***
 We used the [OpenCV](http://opencv.org/) framework to solve the following task of processing stereo vision images [4] in real time:
 
-* o Stereo Image Acquisition
-* o Camera Calibration using a checkerboard calibration target
-* o Color Segmentation and Binarization
-* o Object Tracking: Colored balls and taught patterns
+* Stereo Image Acquisition
+* Camera Calibration using a checkerboard calibration target
+* Color Segmentation and Binarization
+* Object Tracking: Colored balls and taught patterns
 
 ![Camera Calibration](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Video%20Processing/OpenCV%20camera%20calibration.png)  
 **Figure 6** *Stereo Camera Calibration*
@@ -57,12 +57,12 @@ We used the [OpenCV](http://opencv.org/) framework to solve the following task o
 In order to demonstrate our vision of the *Junk Buster* SpaceBots we created an interactive live demo with exemplary space trajectories. 
 Features:
 
-* o Data Processing: Numeric calculation of distance, speed and acceleration
-* o Visualization: Movements of the objects in 3D
-* o Alarm features: Collision alarm between all objects
-* o Impact prediction: Time to impact with alarm levels
-* o Interactivity: The operational Junk Buster follows the mouse. Scrolling edits the depth value set.
-* o Exemplary Space Trajectories: Generating data to animate the demo
+* Data Processing: Numeric calculation of distance, speed and acceleration
+* Visualization: Movements of the objects in 3D
+* Alarm features: Collision alarm between all objects
+* Impact prediction: Time to impact with alarm levels
+* Interactivity: The operational Junk Buster follows the mouse. Scrolling edits the depth value set.
+* Exemplary Space Trajectories: Generating data to animate the demo
 
 ![Dashboard Live Demo](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Dashboard%20UI/JunkBusterDemo%20Overview.png)
 **Figure 8** *Dashboard User Interface with Annotations*
@@ -77,9 +77,9 @@ The original plan was to code a proof of concept in MATLAB by using different to
 #Conclusion: Saving the Future of Space Exploration
 ***
 
-By having optical particle detection on board of the SpaceBots, they can detect and remove objects that are invisible to the existing tracking systems. In our mind the technologies exist to reduce the harm of space junk today. With the existing NASA SPHERE program there is an existing platform that could be used for our purpose.
+By using an optical method of debris detection on board of the SpaceBots, they can track and remove objects which cannot be tracked with the needed accuracy by existing ground based tracking systems. We utilize the stereo data to deliver 3D information for approaching space debris. With the existing NASA SPHERE program there is an opportunity of testing our systems which than can be used for the greater purpose of removing space junk.
 
-We think it's time for starting to save the future of space exploration!
+We think it's time for starting to save the future of space exploration now!
 
 #Acknowledgments
 ***
@@ -87,17 +87,17 @@ Thanks to the members of staff at [Lab75](https://lab75.jp/), our host at Space 
 
 #References
 ***
-^1 ["Orbital Debris FAQ: How many orbital debris are currently in Earth orbit?"](http://orbitaldebris.jsc.nasa.gov/faqs.html#3), NASA, March 2012.  
-^2 [SPHERES Satellites](http://www.nasa.gov/spheres/satellites.html), NASA, August 2013.  
-^3 [The Visual Estimation for Relative Tracking and Inspection of Generic Objects (VERTIGO) program](http://ssl.mit.edu/spheres/projects/vertigo.html), MIT Space Systems Laboratory.  
-^4 [Camera Calibration and 3D Reconstruction](http://docs.opencv.org/modules/calib3d/doc/calib3d.html), OpenCV, February 2015.
+[1] ["Orbital Debris FAQ: How many orbital debris are currently in Earth orbit?"](http://orbitaldebris.jsc.nasa.gov/faqs.html#3), NASA, March 2012.  
+[2] [SPHERES Satellites](http://www.nasa.gov/spheres/satellites.html), NASA, August 2013.  
+[3] [The Visual Estimation for Relative Tracking and Inspection of Generic Objects (VERTIGO) program](http://ssl.mit.edu/spheres/projects/vertigo.html), MIT Space Systems Laboratory.  
+[4] [Camera Calibration and 3D Reconstruction](http://docs.opencv.org/modules/calib3d/doc/calib3d.html), OpenCV, February 2015.
 
 
 #Project Data
 ***
-* o [Source Code Repository](https://github.com/mace301089/NASASpaceAppsChallenge.git)
-* o [Introduction Video](https://vimeo.com/125179293)
-* o [ Presentation Slides](http://prezi.com/fyv5emc8qm2u/)
+* [Source Code Repository](https://github.com/mace301089/NASASpaceAppsChallenge.git)
+* [Introduction Video](https://vimeo.com/125179293)
+* [Presentation Slides](http://prezi.com/fyv5emc8qm2u/)
 
 #About the Authors
 ***
@@ -114,9 +114,14 @@ Thanks to the members of staff at [Lab75](https://lab75.jp/), our host at Space 
 *Student of Electronic and Medical Engineering*
 
 **Philipp Schneider**  
-*Student of Photonics and Computer Vision*
+*Student of Photonics and Computer Vision*    
+  
+
+![JUNK-BUSTERS Team with Astro-Jared at Lab75, Frankfurt](https://raw.githubusercontent.com/mace301089/NASASpaceAppsChallenge/master/Demo/Team%20Photo/JUNK-BUSTERS%20Team%20with%20Astro-Jared%20at%20Lab75%2C%20Frankfurt.jpg)  
+*From left to right: Philipp, Tim, Astro-Jared, Marcel, Eduardo, Sebastian.*  
+*JUNK-BUSTERS Team with Astro-Jared at Lab75, Frankfurt on 12. April 2015.*
 
 This project was worked on during the NASA Space Apps Challenge 2015 (11.-12.04.2015).  
-Last updated: 17.04.2015.
+Last updated: 19.04.2015.
 
 ***
